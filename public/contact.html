@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EasyRide</title>
+    <!-- CSS file controls the appearance of this page -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!-- PAGE CONTENT STARTS HERE -->
+
+    <!-- HEADER: website name and navigation links -->
+<header>
+        <div class="brand">EasyRide Vehicle Rentals</div>
+   
+            
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="fleet.html">Our Vehicles</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="offers.html">Offers</a>
+    <a href="faq.html">FAQ</a>
+    <a href="quote.html">Quick Quote</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+ 
+    </header>
+
+    <!-- MAIN CONTENT: the main information or form for this page -->
+<main>
+        <h1>Contact Us</h1>
+        <p>Send us your question about vehicle rentals.</p>
+
+        <form action="../php/contact.php" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" minlength="10" maxlength="10" inputmode="numeric" placeholder="Enter 10-digit phone number" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        
+    </main>
+
+    <!-- FOOTER: copyright / bottom-of-page information -->
+<footer>
+        © 2026 EasyRide Vehicle Rentals. All Rights Reserved.
+    
+    </footer>
+    <!-- JavaScript adds interactive features to this page -->
+    <script src="js/script.js"></script>
+</body>
+</html>

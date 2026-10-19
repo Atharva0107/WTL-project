@@ -1,0 +1,13 @@
+<?php
+// Copy this file to config.local.php and change settings if your MySQL setup differs.
+$host = 'localhost';
+$user = 'root';
+$password = '';
+$database = 'vehicle_rental';
+
+$conn = new mysqli($host, $user, $password, $database);
+if ($conn->connect_error) {
+    die('Database connection failed. Check your database settings.');
+}
+$conn->set_charset('utf8mb4');
+?>

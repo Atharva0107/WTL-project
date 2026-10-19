@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quick Quote | EasyRide</title>
+    <!-- CSS file controls the appearance of this page -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<!-- PAGE CONTENT STARTS HERE -->
+    <!-- HEADER: website name and navigation links -->
+<header>
+        <div class="brand">EasyRide Vehicle Rentals</div>
+        
+            
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="fleet.html">Our Vehicles</a>
+    <a href="how-it-works.html">How It Works</a>
+    <a href="offers.html">Offers</a>
+    <a href="faq.html">FAQ</a>
+    <a href="quote.html">Quick Quote</a>
+    <a href="contact.html">Contact Us</a>
+</nav>
+
+    
+    </header>
+    <!-- MAIN CONTENT: the main information or form for this page -->
+<main>
+        <h1>Quick Quote Calculator</h1>
+        <p>Estimate the rental price; this is not a confirmed booking.</p>
+        <form id='quoteForm'><label>Rental days<input id='days' type='number' min='1' value='1'
+                    required></label><label>Vehicle rate<select id='rate'>
+                    <option value='1800'>City Hatchback ₹1,800/day</option>
+                    <option value='2500'>Family Sedan ₹2,500/day</option>
+                    <option value='3500'>Adventure SUV ₹3,500/day</option>
+                    <option value="3200">Premium Sedan - ₹3,200/day</option>
+                    <option value="3000">Family MPV- ₹3,000/day</option>
+                    <option value="2700">Compact Crossover - ₹2,700/day</option>
+
+                </select></label><button>Calculate</button></form>
+        <p id='quoteResult' class='notice'>Your estimate appears here.</p><p><a class='button' href='../php/booking.php'>Continue to booking</a></p>
+    </main>
+    <!-- FOOTER: copyright / bottom-of-page information -->
+<footer>© 2026 EasyRide Vehicle Rentals. All Rights Reserved.</footer>
+    <!-- JavaScript adds interactive features to this page -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
